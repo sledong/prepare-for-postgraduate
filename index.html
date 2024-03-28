@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>首页</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1>HTML页面</h1>
-    </body>
+
+<head>
+    <title>首页</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 
+        标签的通用属性有：id、title、class、style
+        id 属性用来赋予某个标签唯一的名称（标识符）
+        class 属性也可以为标签定义名称（标识符），不同的是 class 属性在整个 HTML 文档中不必是唯一的，我们可以为多个标签定义相同的 class 属性值。
+        另外，还可以为一个 HTML 标签定义多个 class 属性值.
+        title 属性用来对标签内容进行描述说明，当鼠标移动到该标签上方时会显示出 title 属性的值
+        style 属性我们可以在 HTML 标签内部为标签定义 CSS 样式，例如设置文本的颜色、字体等。
+     -->
+    <h1>HTML页面</h1>
+    <h2>目的：制定计划，从网络上爬取资源，知识总结</h2>
+    <h6>h6标题</h6>
+    <h7>h7标题（试试超过h6的有没有效果）,超过6就不好用了</h7>
+    <br/>
+    <!--
+        <a>标签中 target 的属性值
+        _self	默认，在现有窗口中打开新页面，原窗口将被覆盖。
+        _blank	在新窗口中打开新页面，原窗口将被保留。
+        _parent	在当前框架的上一层打开新页面。
+        _top	在顶层框架中打开新页面。 
+    -->
+    <a href="https://c.biancheng.net/html/" target="_self">HTML入门教程</a>
+    <!-- br 自闭标签 换行 -->
+    <br/>
+    <input type="text"/>
+    <ul>
+        <li>第一</li>
+        <li>第二</li>
+    </ul>
+    <ul>
+        <li>第一</li>
+        <li>第二</li>
+    </ul>
+    <div>
+        <p>div块内内容</p>
+        <!-- hr自闭标签 分割线 -->
+        <hr/>
+        <!-- <img src="./resource/1.gif" alt="块中的第一个图片"\> -->
+        <a href="./resource/1.gif" target="_blank" title="单击可以打开"><img src="./resource/1.gif" alt="块中的第一个图片"\></a>
+    </div>
+</body>
+
 </html>
