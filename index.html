@@ -19,7 +19,7 @@
     <h2>目的：制定计划，从网络上爬取资源，知识总结</h2>
     <h6>h6标题</h6>
     <h7>h7标题（试试超过h6的有没有效果）,超过6就不好用了</h7>
-    <br/>
+    <br />
     <!--
         <a>标签中 target 的属性值
         _self	默认，在现有窗口中打开新页面，原窗口将被覆盖。
@@ -29,8 +29,8 @@
     -->
     <a href="https://c.biancheng.net/html/" target="_self">HTML入门教程</a>
     <!-- br 自闭标签 换行 -->
-    <br/>
-    <input type="text"/>
+    <br />
+    <input type="text" />
     <ul>
         <li>第一</li>
         <li>第二</li>
@@ -42,9 +42,178 @@
     <div>
         <p>div块内内容</p>
         <!-- hr自闭标签 分割线 -->
-        <hr/>
+        <hr />
         <!-- <img src="./resource/1.gif" alt="块中的第一个图片"\> -->
-        <a href="./resource/1.gif" target="_blank" title="单击可以打开"><img src="./resource/1.gif" alt="块中的第一个图片"\></a>
+        <a href="./resource/1.gif" target="_blank" title="单击可以打开"><img src="./resource/1.gif" alt="块中的第一个图片" \></a>
+    </div>
+    <div>
+
+        <!-- <table> 表示表格，表格的所有内容需要写在 <table> 和 </table> 之间。
+<tr> 是 table row 的简称，表示表格的行。表格中有多少个 <tr> 标签就表示有多少行数据。
+<td> 是 table datacell 的简称，表示表格的单元格，这才是真正存放表格数据的标签。单元格的数据可以是文本、图片、列表、段落、表单、水平线、表格等多种形式。
+<th> 是 table heading 的简称，表示表格的表头。<th> 其实是 <td> 单元格的一种变体，本质上还是一种单元格。<th> 一般位于第一行，充当每一列的标题。大多数的浏览器会把表头显示为粗体居中的文本。
+        默认情况下，表格是没有边框的。但是我们可以使用 <table> 标签中的 border 属性来设置表格的边框宽度，单位是像素（px）。本例中我们将表格的边框宽度设置为 1px。注意，px 是默认的单位，不用显式指明。
+-->
+        <table border="2" style="border-collapse: collapse;border-radius: 10%;">
+            <caption>计划表</caption>
+            <tr>
+                <th>
+                    星期
+                    <br />/<br />
+                    科目
+                </th>
+                <th>
+                    语文
+                </th>
+                <th>
+                    数学
+                </th>
+                <th>政治</th>
+                <th>
+                    专业课
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    星期一
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    星期二
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    星期三
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    星期四
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    星期五
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td></td>
+                <td>
+
+                </td>
+                </td>
+            <tr>
+                <td>
+                    星期六
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td></td>
+                <td>
+
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    星期日
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                <td></td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="5">PS：</td>
+                <td colspan="4">跨4列数据</td>
+            </tr>
+
+        </table>
+    </div>
+    <div title="有序列表和无序列表">
+
+        <!-- 有序列表	<ol> 表示有序列表，<li> 表示列表中的每一项，默认使用阿拉伯数字编号。
+            无序列表	<ul> 表示无序列表，<li> 表示列表中的每一项，默认使用●符号作为作为每一项的标记。
+            定义列表	<dl> 表示定义列表，<dt> 表示定义术语、<dd> 表示定义描述。一般情况下，每个 <dt> 搭配一个 <dd>，一个 <dl> 可以包含多对 <dt> 和 <dd>。 -->
+
+        <!-- <ol> 标签用来表示有序列表。有序列表之间的内容有先后顺序之分， -->
+        <ol title="把大象关冰箱的步骤">
+            <li>把冰箱门打开</li>
+            <li>把大象关进去</li>
+            <li>把冰箱门关上</li>
+        </ol>
+        <!-- <ul> 标签来表示无序列表。无序列表和有序列表类似，都是使用 <li> 标签来表示列表的每一项，但是无序列表之间的内容没有顺序 -->
+        <ul title="早餐吃什么">
+            <li>鸡蛋</li>
+            <li>牛奶</li>
+            <li>香蕉</li>
+        </ul>
+        <!-- <dl> 是 definition list 的简称，表示定义列表。
+            <dt> 是 definition term 的简称，表示定义术语，也就是我们说的标题。
+            <dd> 是 definition description 的简称，表示定义描述 。 -->
+        <dl>
+            <dt>
+                英语
+            </dt>
+            <dd>
+                English
+            </dd>
+        </dl>
     </div>
 </body>
 
